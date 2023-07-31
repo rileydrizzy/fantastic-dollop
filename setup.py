@@ -9,22 +9,21 @@ with open("README.md", "r", encoding= "utf-8") as f:
 
 __version__ = "0.0.0"
 
-repo_name = ""
-Author_user_name = "Ipadeola Ladipo Ezekiel"
-src_repo = ""
-Author_Email = "ipadeolaoladipo@outlook.com"
-project_url = ""
+REPO_NAME = "REPO_TEMPLATE"
+AUTHOR_USER_NAME = "Ipadeola Ladipo Ezekiel"
+SRC_REPO = "src"
+AUTHOR_EMAIL = "ipadeolaoladipo@outlook.com"
+
 
 setuptools.setup(
-    name= src_repo,
+    name= SRC_REPO,
     version= __version__,
-    license= "",
-    author= Author_user_name,
-    description= "",
+    license= "MIT",
+    author= AUTHOR_USER_NAME,
+    description= "Repo Setup Template",
     long_description= long_description,
     long_description_content = "text/markdown",
-    url= project_url,
-    keywords= [],
+    url= f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
+    project_urls = {"Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",},
     package_dir= {"" : "src"},
-    packages= setuptools.find_packages(where= "src")
-)
+    packages= setuptools.find_packages(where= "src"))
