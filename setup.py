@@ -11,7 +11,6 @@ __version__ = "0.0.0"
 
 REPO_NAME = ""
 AUTHOR_USER_NAME = "Ipadeola Ladipo Ezekiel"
-SRC_REPO = "src"
 AUTHOR_EMAIL = "ipadeolaoladipo@outlook.com"
 
 
@@ -25,5 +24,4 @@ setuptools.setup(
     long_description_content = "text/markdown",
     url= f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls = {"Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",},
-    package_dir= {"" : "src"},
-    packages= setuptools.find_packages(where= "src"))
+    packages= setuptools.find_packages(exclude=[])
